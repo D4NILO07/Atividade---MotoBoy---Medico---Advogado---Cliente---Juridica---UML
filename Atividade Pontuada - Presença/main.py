@@ -10,23 +10,21 @@ from models.Cliente import Cliente
 from models.Juridica import Juridica
 system("cls||clear")
 
-endereco_medico = Endereco("Rua BEIA", "130", "1º Andar", "40711 - 600", "Salvador", UnidadeFederativa.BAHIA.nome)
-endereco_motoboy = Endereco("Avenida Paulista", "1000", "Apartamento 202", "01310-100", "São Paulo", UnidadeFederativa.SAO_PAULO.nome)
-endereco_advogado = Endereco("Rua do Comércio", "500", "Sala 101", "20010-000", "Rio de Janeiro", UnidadeFederativa.RIO_DE_JANEIRO.nome)
-endereco_cliente = Endereco("Rua das Palmeiras", "45", "Bloco B", "20250-400", "Rio de Janeiro", UnidadeFederativa.RIO_DE_JANEIRO.nome)
-endereco_juridica = Endereco("Avenida das Nações", "1000", "Conjunto 501", "22222-000", "Rio de Janeiro", UnidadeFederativa.RIO_DE_JANEIRO.nome)
+endereco_medico = Endereco("Rua das Flores", "250", "Sala 3", "30150-300", "Belo Horizonte", UnidadeFederativa.MINAS_GERAIS.nome)
+endereco_motoboy = Endereco("Avenida Brasil", "200", "Casa 4", "22290-000", "Rio de Janeiro", UnidadeFederativa.RIO_DE_JANEIRO.nome)
+endereco_advogado = Endereco("Rua Pedro II", "150", "Cobertura", "40100-000", "Salvador", UnidadeFederativa.BAHIA.nome)
+endereco_cliente = Endereco("Rua Augusta", "500", "Loja 12", "01413-000", "São Paulo", UnidadeFederativa.SAO_PAULO.nome)
+endereco_juridica = Endereco("Avenida Goiás", "900", "Andar 2", "74000-000", "Goiânia", UnidadeFederativa.GOIAS.nome)
 
+medico = Medico("Juliana Santos", "31 91234-5678", "juliana.santos@medico.com", endereco_medico, "12345678922", "765432123", "05/06/1980", Sexo.FEMININO, "CRM12345", Setor.SAUDE, 3500.00, "123456")
 
+motoboy = Motoboy("Rafael Lima", "21 92345-6789", "rafael.lima@entregas.com", endereco_motoboy, "98765432222", "654321987", "11/02/1995", Sexo.MASCULINO, "CNPJ654321", Setor.LOGISTICA, 2200.00, "456789")
 
-medico = Medico("Douglas","71 98472 - 9798","douglas.a.silva7@ba.estudante.senai.br",endereco_medico, "06358631231", "1223131231", "25/03/2007", Sexo.MASCULINO, "1231231313123", Setor.ENGENHARIA, 2532.00, "12312")
+advogado = Advogado("Mariana Oliveira", "71 93456-7890", "mariana.oliveira@advocacia.com", endereco_advogado, "09876543211", "876543210", "18/09/1978", Sexo.FEMININO, "OAB87654", Setor.JURIDICO, 5000.00, "DF654321")
 
-motoboy = Motoboy("Carlos Souza","11 98765-4321","carlos.souza@entrega.com",endereco_motoboy,"98765432100","345678912","15/07/1990",Sexo.MASCULINO,"202056",Setor.OPECAOES,1800.00,"1234567890")
+cliente = Cliente("Pedro Almeida", "11 99876-5432", "pedro.almeida@cliente.com", endereco_cliente, "56473829100", "987654321", "25/12/1990", Sexo.MASCULINO, "CLI987654")
 
-advogado = Advogado("Fernanda Oliveira","61 99876-5432","fernanda.oliveira@advocacia.com",endereco_advogado,"12345678901","987654321","23/05/1985",Sexo.FEMININO,"305762",Setor.JURIDICO,4500.00,"DF123456")
-
-cliente = Cliente("Ana Costa","21 99999-8888","ana.costa@exemplo.com",endereco_cliente,"98765432100","321654987","10/11/1992",Sexo.FEMININO,"AT202309001")
-
-juridica = Juridica("Empresa Exemplo LTDA","21 98888-7777","contato@empresaexemplo.com",endereco_juridica,"12.345.678/0001-90","12345678")
+juridica = Juridica("Tech Solutions LTDA", "62 99345-6789", "contato@techsolutions.com", endereco_juridica, "99.876.543/0001-10", "54321876")
 
 print(medico)
 print("\n")
